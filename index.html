@@ -9,8 +9,49 @@
 
 <body>
     <div id="upperBar">
+        <h1>Trivia de Laboratoria</h1>
+    </div>
+    <div id="login">
+        <form id="userName" onsubmit="setName()" action="#">
+            <h2>Cual es tu nombre?</h2>
+            <!--campo de texto para escribir el nombre-->
+            <input id="inputName" type="text">
+            <!--llama a la funcion que guarda el nombre-->
+            <input id="buttonName" type="submit">
+        </form>
+    </div>
+    <div>
         <span id="nameLabel">Nombre : </span>
         <span id="name"></span>
+    </div>
+    <div id="questions">
+        <div id="wannaPlay">
+            <label>¿quieres jugar?</label>
+            <button onclick="yesPlay()">Si</button>
+            <button onclick="noPlay()">No</button>
+        </div>
+        <form id="questionsForm" onsubmit="checkQuestions(this)">
+            <div>
+                <label>¿han egresado hombres en Laboratoria?</label>
+                <!--crea un campo de opcion simple-->
+                <select id="questionsOne">
+                    <option value="n">No</option>
+                    <option value="s">Si</option>
+                </select>
+            </div>
+            <div>
+                <label>¿hay laboratoria en concepción?</label>
+                <select id="questionsTwo">
+                    <option value="n">No</option>
+                    <option value="s">Si</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" id="buttonQuestions">
+            </div>
+
+
+        </form>
     </div>
     <div id="scoreBoard">
         <div id="rightAnswers">

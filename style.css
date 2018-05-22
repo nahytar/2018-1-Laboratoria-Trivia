@@ -1,3 +1,9 @@
+#upperBar {
+    background-color: rgba(81, 236, 190, 0.067);
+    text-align: center;
+}
+
+
 #rightAnswers {
     background-color: rgb(136, 218, 210);
     width: 50%;
@@ -14,4 +20,14 @@
 
 .answer {
     color: white;
+}
+
+#scoreBoard {
+    display: none;
+}
+#wannaPlay {
+    display: none
+}
+#questionsForm {
+    display: none
 }
